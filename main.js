@@ -15,7 +15,7 @@ $(document).ready(function(){
     $('#cep').mask('00000-000');
     $('#btn-buscar-cep').click(function(){
         const cep = $('#cep').val();
-        const endpoint = `https://viacep.com.br/ws/${cep}/json/resultado`;
+        const endpoint = `https://viacep.com.br/ws/${cep}/json/`;
         const botao = $(this);
         $(botao).find('i').addClass('d-none');
         $(botao).find('span').removeClass('d-none');
